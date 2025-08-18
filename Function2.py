@@ -25,9 +25,18 @@
 #     print(a/b)
 # div(10,2)
 
-def hello(name="Rahul",age=10):
-    print(f"Name: {name} Age: {age}")
-hello("Bihan",13)
-hello(age = 13, name = "Bihan")
-hello(name="Bihan")
+# def hello(name="Rahul",age=10):
+#     print(f"Name: {name} Age: {age}")
+# hello("Bihan",13)
+# hello(age = 13, name = "Bihan")
+# hello(name="Bihan")
+
+def contributions(goals=75,assits=110):
+    print(f"You Have  {goals} and {assits} assits in football")
+
+contributions(100,50)
+contributions(assits=50,goals=100)
+contributions(goals=100)
+
+
 
