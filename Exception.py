@@ -1,26 +1,38 @@
+# # try:
+# #    number = int(input("Enter The number : "))
+# #    print("The Number entered is : " , number)
+
+# # except ValueError as ex :
+# #     print("Exception",ex)
+
 # try:
-#    number = int(input("Enter The number : "))
-#    print("The Number entered is : " , number)
+#     num1, num2 = eval(input("Enter two numbers, separated by a comma: "))
+#     result = num1 / num2
+#     print("Result is", result)
 
-# except ValueError as ex :
-#     print("Exception",ex)
+# except ZeroDivisionError:
+#     print("Division by zero is error !!")
 
-try:
-    num1, num2 = eval(input("Enter two numbers, separated by a comma: "))
-    result = num1 / num2
-    print("Result is", result)
+# except SyntaxError:
+#     print("Comma is missing. Enter numbers separated by comma like this 4,5")
 
-except ZeroDivisionError:
-    print("Division by zero is error !!")
+# except:
+#     print("Wrong input")
 
-except SyntaxError:
-    print("Comma is missing. Enter numbers separated by comma like this 4,5")
+# else:
+#     print("No exceptions")
 
-except:
-    print("Wrong input")
+# finally:
+#     print("This will execute no matter what")
 
-else:
-    print("No exceptions")
+valid = False
 
-finally:
-    print("This will execute no matter what")
+while not valid:   
+    try:
+        n = int(input("Enter a number: ")) 
+        while n % 2 == 0:
+            print("bye")
+            valid = True
+            break
+    except ValueError:
+        print("Invalid")
